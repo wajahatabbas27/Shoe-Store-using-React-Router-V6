@@ -10,12 +10,12 @@ import ShoeIndex from './components/ShoeIndex';
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
+      <ShoeIndex />
       <Routes>
-        
-        <Route path="shoe" element={<Shoe/>}>
-          <Route path="/" element={<ShoeIndex/>}></Route>
-          <Route path=":slug" element={<ShoeDetails/>}></Route>
+        <Route path="shoe" element={<Shoe />}>
+          <Route path="/" element={<ShoeIndex />}></Route>
+          <Route path=":slug" element={<ShoeDetails />}></Route>
         </Route>
       </Routes>
 
