@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Shoe from './components/Shoe';
 import ShoeDetails from './components/ShoeDetails';
 import ShoeIndex from './components/ShoeIndex';
-import NotFound from './components/NotFound'
+//import NotFound from './components/NotFound'
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
           <Route path="/" element={<ShoeIndex/>}></Route>
           <Route path=":slug" element={<ShoeDetails/>}></Route>
         </Route>
-        <Route path="*" element={<NotFound/>}></Route>
       </Routes>
 
     </div>
